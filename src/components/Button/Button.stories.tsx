@@ -23,17 +23,21 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
+  name: 'Основная',
   args: { variant: 'primary' },
 };
 
 export const Secondary: Story = {
+  name: 'Второстепенная',
   args: { variant: 'secondary', children: 'Отмена' },
 };
 
 export const Danger: Story = {
+  name: 'Опасное действие',
   args: { variant: 'danger', children: 'Удалить' },
 };
 
 export const Disabled: Story = {
+  name: 'Отключена',
   args: { disabled: true },
 };

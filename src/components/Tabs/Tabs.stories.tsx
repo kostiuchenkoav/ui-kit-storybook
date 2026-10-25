@@ -18,8 +18,9 @@ const meta: Meta<typeof Tabs> = {
 export default meta;
 type Story = StoryObj<typeof Tabs>;
 
-export const Default: Story = {};
+export const Default: Story = { name: 'По умолчанию' };;
 
 export const StartOnSecondTab: Story = {
+  name: 'Открыта вторая вкладка',
   args: { defaultTabId: 'security' },
 };

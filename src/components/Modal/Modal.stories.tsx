@@ -41,5 +41,6 @@ function ModalDemo() {
 }
 
 export const Interactive: Story = {
+  name: 'Интерактивное окно',
   render: () => <ModalDemo />,
 };
