@@ -9,6 +9,12 @@ const meta: Meta<typeof Modal> = {
   tags: ['autodocs'],
   parameters: {
     docs: {
+      story: {
+        // Окно фиксировано по отношению к viewport, поэтому показываем историю в отдельном фрейме,
+        // иначе оно обрезается внутри блока документации.
+        inline: false,
+        iframeHeight: 360,
+      },
       description: {
         component:
           'Закрывается по Escape и кнопке «Закрыть». Фокус удерживается внутри окна и возвращается на исходный элемент.',
