@@ -2,7 +2,11 @@
 
 Небольшая библиотека React-компонентов на TypeScript с упором на доступность. Все компоненты описаны в Storybook, покрыты тестами и проверяются на нарушения правил доступности (axe) прямо в браузере.
 
-> **Storybook:** _добавьте ссылку на опубликованный Storybook после деплоя_
+> **Storybook:** [https://kostiuchenkoav.github.io/ui-kit-storybook/](https://kostiuchenkoav.github.io/ui-kit-storybook/)
+
+![Скриншот: ui-kit-storybook](docs/screenshot.png)
+
+*Рис. 1. Компонент Button в Storybook: варианты, аддоны и проверка доступности.*
 
 ## Состав
 
