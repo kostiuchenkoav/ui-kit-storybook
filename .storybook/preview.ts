@@ -18,6 +18,16 @@ const preview: Preview = {
     a11y: {
       test: 'error',
     },
+    // Фон холста по умолчанию кофейный. Сетка выключена, чтобы цвет фона был виден целиком.
+    backgrounds: {
+      default: 'coffee',
+      values: [
+        { name: 'coffee', value: '#d9c4a8' },
+        { name: 'white', value: '#ffffff' },
+        { name: 'dark', value: '#161b26' },
+      ],
+      grid: { disable: true },
+    },
   },
 };
 
