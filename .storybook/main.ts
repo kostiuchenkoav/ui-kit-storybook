@@ -11,7 +11,15 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {},
   },
-  viteFinal: async (config) => ({ ...config, base: './' }),
+  // Генерация .d.ts нужна только для сборки библиотеки. Storybook использует тот же vite.config.ts,
+  // поэтому плагин vite-plugin-dts здесь отключаем, иначе сборка падает на чистом клоне без dist/.
+  viteFinal: async (config) => ({
+    ...config,
+    base: './',
+    plugins: (config.plugins ?? [])
+      .flat()
+      .filter((p) => (p as { name?: string } | undefined)?.name !== 'vite:dts'),
+  }),
   docs: {
     autodocs: 'tag',
   },
